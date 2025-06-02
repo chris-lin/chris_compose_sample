@@ -16,6 +16,7 @@ import com.example.chriscomposesample.ui.theme.ChrisComposeSampleTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        test(1)
         enableEdgeToEdge()
         setContent {
             ChrisComposeSampleTheme {
@@ -26,6 +27,14 @@ class MainActivity : ComponentActivity() {
                     )
                 }
             }
+        }
+    }
+
+    private fun test(testValue: Int) {
+        when (testValue) {
+            1 -> "aa"
+            2 -> "aa"
+            3 -> "aa"
         }
     }
 }
